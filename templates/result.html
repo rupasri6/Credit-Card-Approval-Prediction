@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <section class="panel result-panel">
+      <p class="eyebrow">{{ model_name }}</p>
+      <h1>{{ result }}</h1>
+
+      {% if probability is not none %}
+        <p class="score">Confidence: {{ "%.2f"|format(probability * 100) }}%</p>
+      {% endif %}
+
+      <a class="back-link" href="{{ url_for('index') }}">Check another transaction</a>
+    </section>
+  </main>
+</body>
+</html>

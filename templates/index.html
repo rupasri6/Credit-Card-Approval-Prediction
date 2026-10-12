@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Credit Card Approval Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="box">
+    <div class="navbar">SmartBridge</div>
+
+    <div class="content">
+      <h1>Credit Card Approval Prediction</h1>
+
+      <form method="post">
+        <div class="grid">
+          <div>
+            <label>GENDER</label>
+            <select name="gender">
+              <option>FEMALE</option>
+              <option>MALE</option>
+            </select>
+          </div>
+
+          <div>
+            <label>OWN CAR OR NOT</label>
+            <select name="own_car">
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+          <div>
+            <label>OWN REALSTATE</label>
+            <select name="own_realstate">
+              <option>NO</option>
+              <option>YES</option>
+            </select>
+          </div>
+
+          <div>
+            <label>TOTAL ANUAL INCOME</label>
+            <input name="income" type="number" value="50000">
+          </div>
+
+          <div>
+            <label>TYPE OF INCOME</label>
+            <select name="income_type">
+              <option>Pensioner</option>
+              <option>Working</option>
+              <option>Commercial associate</option>
+              <option>State servant</option>
+            </select>
+          </div>
+
+          <div>
+            <label>EDUCATION</label>
+            <select name="education">
+              <option>Higher education</option>
+              <option>Secondary / secondary special</option>
+              <option>Incomplete higher</option>
+              <option>Lower secondary</option>
+            </select>
+          </div>
+
+          <div>
+            <label>FAMILY STATUS</label>
+            <select name="family_status">
+              <option>Married</option>
+              <option>Single / not married</option>
+              <option>Civil marriage</option>
+              <option>Separated</option>
+              <option>Widow</option>
+            </select>
+          </div>
+
+          <div>
+            <label>TYPE OF HOUSING</label>
+            <select name="housing">
+              <option>House / apartment</option>
+              <option>Rented apartment</option>
+              <option>With parents</option>
+              <option>Municipal apartment</option>
+            </select>
+          </div>
+
+          <div>
+            <label>DAYS BIRTH</label>
+            <input name="days_birth" type="number" step="any" value="29.334247">
+          </div>
+
+          <div>
+            <label>DAYS EMPLOYED</label>
+            <input name="days_employed" type="number" step="any" value="-2.095890">
+          </div>
+
+          <div>
+            <label>FAMILY MEMBERS</label>
+            <input name="family_members" type="number" value="2">
+          </div>
+
+          <div>
+            <label>EMI PAID OFF</label>
+            <input name="emi_paid_off" type="number" value="4">
+          </div>
+
+          <div>
+            <label>EMI OF PASTDUES</label>
+            <input name="emi_pastdues" type="number" value="1">
+          </div>
+
+          <div>
+            <label>NUMBER OF LOANS</label>
+            <input name="number_loans" type="number" value="2">
+          </div>
+        </div>
+
+        <hr>
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
